@@ -3,18 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using RatingAPI.services.ratingService;
 
-namespace TodoApi.Controllers
+namespace RatingAPI.Controllers
 {
     [Route("rater/[controller]/[action]")]
     [ApiController]
     public class RatingController : ControllerBase
     {
+        private readonly IRatingServiceFactory _ratingServiceFactory;
+        public RatingController(IRatingServiceFactory ratingServiceFactory)
+        {
+            this._ratingServiceFactory = ratingServiceFactory;
+        }
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Rates()
+        [ProducesResponseType(200)]
+        [ProducesResponseType(404)]
+        public ActionResult<IDictionary<string, string>> Rates(string line, string state)
         {
-            return new string[] { "value1", "value2" };
+            try{
+
+                var ratingEngine = _ratingServiceFactory.CreateRatingService("archimedes");
+                Dictionary<string, string> algorithms = (Dictionary<string, string>)ratingEngine.RatingAlgorithms();
+                
+                if(algorithms.Count == 0 )
+                {
+                    return NotFound ("No Algorithms found");
+                }
+
+                return algorithms;
+
+            }
+            catch (Exception ex)
+            {
+                return NotFound(string.Format ("Error retrieving rates: {0}", ex.Message));
+            }
         }
 
         // GET api/values/5

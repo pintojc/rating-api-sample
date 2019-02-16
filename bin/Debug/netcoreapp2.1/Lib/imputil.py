@@ -627,7 +627,7 @@ def _test_revamp():
 ######################################################################
 
 #
-# TODO
+# ratingapi
 #
 # from Finn Bock:
 #   type(sys) is not a module in Jython. what to use instead?

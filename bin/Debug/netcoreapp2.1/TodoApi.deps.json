@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "TodoApi/1.0.0": {
+      "ratingapiApi/1.0.0": {
         "dependencies": {
           "IronPython": "2.7.8.1",
           "IronPython.StdLib": "2.7.8.1",
@@ -33,10 +33,10 @@
           "System.Data.SqlClient": "4.5.1"
         },
         "runtime": {
-          "TodoApi.dll": {}
+          "ratingapiApi.dll": {}
         },
         "compile": {
-          "TodoApi.dll": {}
+          "ratingapiApi.dll": {}
         }
       },
       "DynamicLanguageRuntime/1.2.1": {
@@ -3237,7 +3237,7 @@
     }
   },
   "libraries": {
-    "TodoApi/1.0.0": {
+    "ratingapiApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

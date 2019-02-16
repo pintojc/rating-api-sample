@@ -219,7 +219,7 @@ def reduce_tree(node, parent=None):
                 #reduce to a single occurrence i.e. do nothing
                 pass
             else:
-                #TODO: handle {min, max} repeaters
+                #ratingapi: handle {min, max} repeaters
                 raise NotImplementedError
                 pass
 

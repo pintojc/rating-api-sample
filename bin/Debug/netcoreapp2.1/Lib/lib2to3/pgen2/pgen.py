@@ -204,15 +204,15 @@ class ParserGenerator(object):
 
     def dump_nfa(self, name, start, finish):
         print "Dump of NFA for", name
-        todo = [start]
-        for i, state in enumerate(todo):
+        ratingapi = [start]
+        for i, state in enumerate(ratingapi):
             print "  State", i, state is finish and "(final)" or ""
             for label, next in state.arcs:
-                if next in todo:
-                    j = todo.index(next)
+                if next in ratingapi:
+                    j = ratingapi.index(next)
                 else:
-                    j = len(todo)
-                    todo.append(next)
+                    j = len(ratingapi)
+                    ratingapi.append(next)
                 if label is None:
                     print "    -> %d" % j
                 else:

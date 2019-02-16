@@ -62,7 +62,7 @@ and if remoteport is not given, then 25 is used.
 #
 # Author: Barry Warsaw <barry@python.org>
 #
-# TODO:
+# ratingapi:
 #
 # - support mailbox delivery
 # - alias files

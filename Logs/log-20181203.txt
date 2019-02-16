@@ -1,0 +1,55 @@
+2018-12-03 17:00:37.647 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-03 17:00:38.308 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-03 17:00:38.317 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-03 17:00:38.363 -05:00 [INF] Request finished in 56.207ms 301 
+2018-12-03 17:00:38.424 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-03 17:00:38.501 -05:00 [INF] Request finished in 78.5677ms 200 text/html
+2018-12-03 17:00:38.511 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui.css  
+2018-12-03 17:00:38.515 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-bundle.js  
+2018-12-03 17:00:38.533 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-standalone-preset.js  
+2018-12-03 17:00:38.581 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2018-12-03 17:00:38.604 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2018-12-03 17:00:38.611 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2018-12-03 17:00:38.613 -05:00 [INF] Request finished in 98.9803ms 200 application/javascript
+2018-12-03 17:00:38.620 -05:00 [INF] Request finished in 104.0472ms 200 application/javascript
+2018-12-03 17:00:38.622 -05:00 [INF] Request finished in 102.2201ms 200 text/css
+2018-12-03 17:00:38.897 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-03 17:00:39.063 -05:00 [INF] Request finished in 166.2808ms 200 application/json;charset=utf-8
+2018-12-03 17:01:25.073 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables  
+2018-12-03 17:01:25.119 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-12-03 17:01:25.130 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Tables (ratingapi) - Validation state: "Valid"
+2018-12-03 17:01:25.685 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Tables (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 546.6594ms.
+2018-12-03 17:01:25.694 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RatingAPI.services.lookupService.Table, ratingapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-12-03 17:01:25.705 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 579.1563ms
+2018-12-03 17:01:25.709 -05:00 [INF] Request finished in 635.8484ms 200 application/json; charset=utf-8
+2018-12-03 17:01:50.431 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Table?tableName=RoofMaterial  
+2018-12-03 17:01:50.442 -05:00 [INF] Route matched with {action = "Table", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Table (ratingapi)
+2018-12-03 17:01:50.466 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Table (ratingapi) with arguments (["RoofMaterial"]) - Validation state: "Valid"
+2018-12-03 17:01:50.952 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Table (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 480.11560000000003ms.
+2018-12-03 17:01:50.956 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.Table'.
+2018-12-03 17:01:50.962 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Table (ratingapi) in 515.7374ms
+2018-12-03 17:01:50.966 -05:00 [INF] Request finished in 535.5734ms 200 application/json; charset=utf-8
+2018-12-03 17:03:59.481 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Table?tableName=OtherPerilsTerritory  
+2018-12-03 17:03:59.492 -05:00 [INF] Route matched with {action = "Table", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Table (ratingapi)
+2018-12-03 17:03:59.515 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Table (ratingapi) with arguments (["OtherPerilsTerritory"]) - Validation state: "Valid"
+2018-12-03 17:03:59.985 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Table (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 465.11150000000004ms.
+2018-12-03 17:03:59.995 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.Table'.
+2018-12-03 17:04:00.001 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Table (ratingapi) in 486.3498ms
+2018-12-03 17:04:00.008 -05:00 [INF] Request finished in 531.9938ms 200 application/json; charset=utf-8
+2018-12-03 17:04:33.955 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Table?tableName=OtherPerilsRelativities  
+2018-12-03 17:04:33.959 -05:00 [INF] Route matched with {action = "Table", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Table (ratingapi)
+2018-12-03 17:04:33.964 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Table (ratingapi) with arguments (["OtherPerilsRelativities"]) - Validation state: "Valid"
+2018-12-03 17:04:34.432 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Table (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 462.9193ms.
+2018-12-03 17:04:34.436 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.Table'.
+2018-12-03 17:04:34.439 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Table (ratingapi) in 476.3235ms
+2018-12-03 17:04:34.444 -05:00 [INF] Request finished in 489.3569ms 200 application/json; charset=utf-8
+2018-12-03 17:12:27.653 -05:00 [INF] Request starting HTTP/1.1 POST http://127.0.0.1:5100/rater/Lookup/LookupData application/json-patch+json 534
+2018-12-03 17:12:27.659 -05:00 [INF] Route matched with {action = "LookupData", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupData (ratingapi)
+2018-12-03 17:12:27.797 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupData (ratingapi) with arguments (["RatingAPI.services.lookupService.LookupRequest"]) - Validation state: "Valid"
+2018-12-03 17:12:27.802 -05:00 [INF] Target Feature Search Query: i_territory, f_factor
+2018-12-03 17:12:29.105 -05:00 [INF] Target Feature Filter Query: i_company_business_id = 1074 AND s_territory = '77081' AND d_effective_date <= '03/28/2018'
+2018-12-03 17:12:29.108 -05:00 [INF] Feature Lookup Query: SELECT TOP 1 i_territory, f_factor FROM OtherPerilsRelativities WHERE i_company_business_id = 1074 AND s_territory = '77081' AND d_effective_date <= '03/28/2018'
+2018-12-03 17:12:29.172 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.LookupData (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1368.1124ms.
+2018-12-03 17:12:29.178 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.LookupResponse'.
+2018-12-03 17:12:29.191 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.LookupData (ratingapi) in 1527.8265000000001ms
+2018-12-03 17:12:29.195 -05:00 [INF] Request finished in 1541.6963ms 200 application/json; charset=utf-8

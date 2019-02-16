@@ -103,7 +103,7 @@ class BaseFix(object):
         """
         raise NotImplementedError()
 
-    def new_name(self, template=u"xxx_todo_changeme"):
+    def new_name(self, template=u"xxx_ratingapi_changeme"):
         """Return a string suitable for use as an identifier
 
         The new name is guaranteed not to conflict with other identifiers.

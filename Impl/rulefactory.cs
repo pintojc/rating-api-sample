@@ -24,8 +24,13 @@ namespace rules
                 if (engine != null)
                 {
                     ScriptScope scope = engine.CreateScope();
+                    scope.SetVariable("total", 0);
+                    string pyScript = string.Format("total = 5 * 4");
+                    ScriptSource src = engine.CreateScriptSourceFromString(pyScript);
+                    var ret_val = src.Execute(scope);
+                    var variable = scope.GetVariable("total");
 
-                    return "success :)";
+                    return string.Format("success :)  value is: {0}", variable);
                 }    
 
                 return "failed :(";

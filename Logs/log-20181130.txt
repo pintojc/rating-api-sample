@@ -1,0 +1,38 @@
+2018-11-30 15:21:20.544 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-11-30 15:21:21.624 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-11-30 15:21:21.638 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-11-30 15:21:21.720 -05:00 [INF] Request finished in 98.842ms 301 
+2018-11-30 15:21:21.738 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-11-30 15:21:21.949 -05:00 [INF] Request finished in 211.0055ms 200 text/html
+2018-11-30 15:21:21.960 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui.css  
+2018-11-30 15:21:21.963 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-bundle.js  
+2018-11-30 15:21:21.968 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-standalone-preset.js  
+2018-11-30 15:21:22.014 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2018-11-30 15:21:22.021 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2018-11-30 15:21:22.029 -05:00 [INF] Request finished in 60.7475ms 200 application/javascript
+2018-11-30 15:21:22.031 -05:00 [INF] Request finished in 68.9302ms 200 text/css
+2018-11-30 15:21:22.041 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2018-11-30 15:21:22.046 -05:00 [INF] Request finished in 86.5776ms 200 application/javascript
+2018-11-30 15:21:22.600 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-11-30 15:21:22.995 -05:00 [INF] Request finished in 395.5132ms 200 application/json;charset=utf-8
+2018-11-30 15:21:30.156 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables  
+2018-11-30 15:21:30.236 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-30 15:21:30.247 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Tables (ratingapi) - Validation state: "Valid"
+2018-11-30 15:21:31.278 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Tables (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1021.4224ms.
+2018-11-30 15:21:31.291 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RatingAPI.services.lookupService.Table, ratingapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-30 15:21:31.340 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 1097.3725ms
+2018-11-30 15:21:31.344 -05:00 [INF] Request finished in 1189.5019ms 200 application/json; charset=utf-8
+2018-11-30 15:21:47.928 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Table?tableName=NewPurchaseFactor  
+2018-11-30 15:21:47.953 -05:00 [INF] Route matched with {action = "Table", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Table (ratingapi)
+2018-11-30 15:21:47.973 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Table (ratingapi) with arguments (["NewPurchaseFactor"]) - Validation state: "Valid"
+2018-11-30 15:21:48.405 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Table (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 427.3439ms.
+2018-11-30 15:21:48.409 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.Table'.
+2018-11-30 15:21:48.415 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Table (ratingapi) in 458.1157ms
+2018-11-30 15:21:48.419 -05:00 [INF] Request finished in 491.1286ms 200 application/json; charset=utf-8
+2018-11-30 15:22:24.747 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Rules/Rule/1000  
+2018-11-30 15:22:24.764 -05:00 [INF] Route matched with {action = "Rule", controller = "Rules"}. Executing action RatingAPI.Controllers.RulesController.Rule (ratingapi)
+2018-11-30 15:22:24.770 -05:00 [INF] Executing action method RatingAPI.Controllers.RulesController.Rule (ratingapi) with arguments (["1000"]) - Validation state: "Valid"
+2018-11-30 15:22:25.381 -05:00 [INF] Executed action method RatingAPI.Controllers.RulesController.Rule (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 605.2666ms.
+2018-11-30 15:22:25.387 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-11-30 15:22:25.391 -05:00 [INF] Executed action RatingAPI.Controllers.RulesController.Rule (ratingapi) in 622.5765ms
+2018-11-30 15:22:25.396 -05:00 [INF] Request finished in 650.5122ms 200 text/plain; charset=utf-8

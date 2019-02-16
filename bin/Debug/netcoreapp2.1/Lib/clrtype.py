@@ -203,7 +203,7 @@ class ClrInterface(ClrType):
         instance_offset = 0 if function_info.is_static else 1
         arg_names = function.func_code.co_varnames
         for i in xrange(len(function.arg_types)):
-            # TODO - set non-trivial ParameterAttributes, default value and custom attributes
+            # ratingapi - set non-trivial ParameterAttributes, default value and custom attributes
             p = method_builder.DefineParameter(i + 1, ParameterAttributes.None, arg_names[i + instance_offset])
 
         if hasattr(function, "CustomAttributeBuilders"):
@@ -235,7 +235,7 @@ class ClrInterface(ClrType):
 
     def map_clr_type(self, clr_type):
         """
-        TODO - Currently "t = clr.GetPythonType(clr.GetClrType(C)); t == C" will be False
+        ratingapi - Currently "t = clr.GetPythonType(clr.GetClrType(C)); t == C" will be False
         for C where C.__metaclass__ is ClrInterface, even though both t and C 
         represent the same CLR type. This can be fixed by publishing a mapping
         between t and C in the IronPython runtime.
@@ -369,7 +369,7 @@ class ClrClass(ClrInterface):
         instance_offset = 0 if function_info.is_static else 1
         arg_names = function.func_code.co_varnames
         for i in xrange(len(function.arg_types)):
-            # TODO - set non-trivial ParameterAttributes, default value and custom attributes
+            # ratingapi - set non-trivial ParameterAttributes, default value and custom attributes
             p = method_builder.DefineParameter(i + 1, ParameterAttributes.None, arg_names[i + instance_offset])
 
         ilgen = method_builder.GetILGenerator()
@@ -565,7 +565,7 @@ def make_cab(attrib_type, *args, **kwds):
 
 def accepts(*args):
     """
-    TODO - needs to be merged with clr.accepts
+    ratingapi - needs to be merged with clr.accepts
     """
     validate_clr_types(args, True)
     def decorator(function):
@@ -575,7 +575,7 @@ def accepts(*args):
 
 def returns(return_type = Void):
     """
-    TODO - needs to be merged with clr.returns
+    ratingapi - needs to be merged with clr.returns
     """
     if return_type != Void:
         validate_clr_types(return_type)

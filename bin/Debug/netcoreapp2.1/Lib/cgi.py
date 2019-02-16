@@ -651,15 +651,15 @@ class FieldStorage:
     def read_binary(self):
         """Internal: read binary data."""
         self.file = self.make_file('b')
-        todo = self.length
-        if todo >= 0:
-            while todo > 0:
-                data = self.fp.read(min(todo, self.bufsize))
+        ratingapi = self.length
+        if ratingapi >= 0:
+            while ratingapi > 0:
+                data = self.fp.read(min(ratingapi, self.bufsize))
                 if not data:
                     self.done = -1
                     break
                 self.file.write(data)
-                todo = todo - len(data)
+                ratingapi = ratingapi - len(data)
 
     def read_lines(self):
         """Internal: read lines until EOF or outerboundary."""

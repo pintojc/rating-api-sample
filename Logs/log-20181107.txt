@@ -1,0 +1,430 @@
+2018-11-07 17:24:24.630 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-11-07 17:24:25.165 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-11-07 17:24:25.173 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-11-07 17:24:25.205 -05:00 [INF] Request finished in 41.5269ms 301 
+2018-11-07 17:24:25.212 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-11-07 17:24:25.288 -05:00 [INF] Request finished in 75.8144ms 200 text/html
+2018-11-07 17:24:25.546 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-11-07 17:24:25.708 -05:00 [INF] Request finished in 165.4389ms 200 application/json;charset=utf-8
+2018-11-07 17:24:29.801 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:24:29.863 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:24:29.873 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 4.2055ms
+2018-11-07 17:24:29.911 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:24:29.942 -05:00 [INF] Request finished in 141.4903ms 500 text/html; charset=utf-8
+2018-11-07 17:44:56.426 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-11-07 17:44:56.999 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-11-07 17:44:57.015 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-11-07 17:44:57.054 -05:00 [INF] Request finished in 55.9681ms 301 
+2018-11-07 17:44:57.063 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-11-07 17:44:57.169 -05:00 [INF] Request finished in 104.6496ms 200 text/html
+2018-11-07 17:44:57.204 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui.css  
+2018-11-07 17:44:57.216 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-standalone-preset.js  
+2018-11-07 17:44:57.233 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-bundle.js  
+2018-11-07 17:44:57.245 -05:00 [INF] The file /swagger-ui.css was not modified
+2018-11-07 17:44:57.246 -05:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2018-11-07 17:44:57.246 -05:00 [INF] The file /swagger-ui-bundle.js was not modified
+2018-11-07 17:44:57.254 -05:00 [INF] Request finished in 50.1003ms 304 text/css
+2018-11-07 17:44:57.257 -05:00 [INF] Request finished in 40.2572ms 304 application/javascript
+2018-11-07 17:44:57.265 -05:00 [INF] Request finished in 21.9596ms 304 application/javascript
+2018-11-07 17:44:57.486 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-11-07 17:44:57.657 -05:00 [INF] Request finished in 169.7139ms 200 application/json;charset=utf-8
+2018-11-07 17:45:00.028 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:45:00.088 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:45:00.113 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Tables (ratingapi) with arguments (["SQL","asdfa"]) - Validation state: "Valid"
+2018-11-07 17:45:00.205 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Tables (ratingapi), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 84.25030000000001ms.
+2018-11-07 17:45:00.214 -05:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-11-07 17:45:00.221 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 126.64450000000001ms
+2018-11-07 17:45:00.226 -05:00 [INF] Request finished in 201.1913ms 404 
+2018-11-07 17:45:27.728 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:45:27.733 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:45:27.741 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Tables (ratingapi) with arguments (["SQL","asdfa"]) - Validation state: "Valid"
+2018-11-07 17:45:43.420 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Tables (ratingapi), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 15673.0427ms.
+2018-11-07 17:45:43.426 -05:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-11-07 17:45:43.430 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 15692.856000000002ms
+2018-11-07 17:45:43.434 -05:00 [INF] Request finished in 15705.8584ms 404 
+2018-11-07 17:47:55.981 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-11-07 17:47:56.457 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-11-07 17:47:56.465 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-11-07 17:47:56.498 -05:00 [INF] Request finished in 43.4885ms 301 
+2018-11-07 17:47:56.509 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-11-07 17:47:56.584 -05:00 [INF] Request finished in 76.3109ms 200 text/html
+2018-11-07 17:47:56.872 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-11-07 17:47:57.062 -05:00 [INF] Request finished in 191.3749ms 200 application/json;charset=utf-8
+2018-11-07 17:47:59.521 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:47:59.583 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:47:59.593 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 3.8629ms
+2018-11-07 17:47:59.631 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:47:59.661 -05:00 [INF] Request finished in 142.2832ms 500 text/html; charset=utf-8
+2018-11-07 17:51:52.661 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-11-07 17:51:53.153 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-11-07 17:51:53.162 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-11-07 17:51:53.197 -05:00 [INF] Request finished in 44.8912ms 301 
+2018-11-07 17:51:53.206 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-11-07 17:51:53.290 -05:00 [INF] Request finished in 83.6422ms 200 text/html
+2018-11-07 17:51:53.541 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-11-07 17:51:53.705 -05:00 [INF] Request finished in 165.2939ms 200 application/json;charset=utf-8
+2018-11-07 17:51:57.379 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:51:57.446 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:51:57.455 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 3.3009ms
+2018-11-07 17:51:57.492 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:51:57.523 -05:00 [INF] Request finished in 144.6288ms 500 text/html; charset=utf-8
+2018-11-07 17:51:58.787 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:51:58.791 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:51:58.796 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.75540000000000007ms
+2018-11-07 17:51:58.801 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:51:58.812 -05:00 [INF] Request finished in 25.5553ms 500 text/html; charset=utf-8
+2018-11-07 17:51:59.257 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:51:59.260 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:51:59.265 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.5541ms
+2018-11-07 17:51:59.270 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:51:59.281 -05:00 [INF] Request finished in 23.957ms 500 text/html; charset=utf-8
+2018-11-07 17:51:59.487 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:51:59.491 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:51:59.495 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.6018ms
+2018-11-07 17:51:59.500 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:51:59.509 -05:00 [INF] Request finished in 22.0569ms 500 text/html; charset=utf-8
+2018-11-07 17:51:59.671 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:51:59.675 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:51:59.679 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.6038ms
+2018-11-07 17:51:59.683 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:51:59.693 -05:00 [INF] Request finished in 22.1366ms 500 text/html; charset=utf-8
+2018-11-07 17:51:59.819 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:51:59.823 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:51:59.829 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 1.0769ms
+2018-11-07 17:51:59.835 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:51:59.848 -05:00 [INF] Request finished in 28.5872ms 500 text/html; charset=utf-8
+2018-11-07 17:51:59.978 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:51:59.983 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:51:59.987 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.6447ms
+2018-11-07 17:51:59.992 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:52:00.004 -05:00 [INF] Request finished in 25.0634ms 500 text/html; charset=utf-8
+2018-11-07 17:52:00.261 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:52:00.265 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:52:00.269 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.58300000000000007ms
+2018-11-07 17:52:00.274 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:52:00.283 -05:00 [INF] Request finished in 22.671ms 500 text/html; charset=utf-8
+2018-11-07 17:52:00.495 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:52:00.499 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:52:00.504 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.61620000000000008ms
+2018-11-07 17:52:00.509 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:52:00.519 -05:00 [INF] Request finished in 24.5053ms 500 text/html; charset=utf-8
+2018-11-07 17:57:35.579 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:57:35.598 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:57:35.601 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.6049ms
+2018-11-07 17:57:35.606 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:57:35.618 -05:00 [INF] Request finished in 47.7444ms 500 text/html; charset=utf-8
+2018-11-07 17:57:37.348 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:57:37.353 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:57:37.357 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.60520000000000007ms
+2018-11-07 17:57:37.362 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:57:37.378 -05:00 [INF] Request finished in 30.3933ms 500 text/html; charset=utf-8
+2018-11-07 17:57:38.071 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 17:57:38.075 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 17:57:38.079 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.5936ms
+2018-11-07 17:57:38.084 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 17:57:38.094 -05:00 [INF] Request finished in 22.9154ms 500 text/html; charset=utf-8
+2018-11-07 18:03:18.012 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-11-07 18:03:18.570 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-11-07 18:03:18.580 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-11-07 18:03:18.618 -05:00 [INF] Request finished in 48.4089ms 301 
+2018-11-07 18:03:18.627 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-11-07 18:03:18.708 -05:00 [INF] Request finished in 80.7124ms 200 text/html
+2018-11-07 18:03:18.955 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-11-07 18:03:19.125 -05:00 [INF] Request finished in 171.0257ms 200 application/json;charset=utf-8
+2018-11-07 18:03:23.552 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 18:03:23.615 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 18:03:23.625 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 3.2721ms
+2018-11-07 18:03:23.662 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 18:03:23.694 -05:00 [INF] Request finished in 141.601ms 500 text/html; charset=utf-8
+2018-11-07 18:03:28.088 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 18:03:28.092 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 18:03:28.097 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 0.75120000000000009ms
+2018-11-07 18:03:28.103 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RatingAPI.services.lookupService.LookupProviderService' while attempting to activate 'RatingAPI.Controllers.LookupController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-07 18:03:28.115 -05:00 [INF] Request finished in 26.2297ms 500 text/html; charset=utf-8
+2018-11-07 18:15:04.105 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-11-07 18:15:04.567 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-11-07 18:15:04.576 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-11-07 18:15:04.608 -05:00 [INF] Request finished in 44.3812ms 301 
+2018-11-07 18:15:04.616 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-11-07 18:15:04.693 -05:00 [INF] Request finished in 77.8868ms 200 text/html
+2018-11-07 18:15:04.939 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-11-07 18:15:05.126 -05:00 [INF] Request finished in 187.3281ms 200 application/json;charset=utf-8
+2018-11-07 18:15:16.151 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables?type=SQL&tableName=asdfa  
+2018-11-07 18:15:16.213 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-11-07 18:15:16.237 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Tables (ratingapi) with arguments (["SQL","asdfa"]) - Validation state: "Valid"
+2018-11-07 18:15:16.290 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Tables (ratingapi), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 43.9934ms.
+2018-11-07 18:15:16.298 -05:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-11-07 18:15:16.305 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 85.119ms
+2018-11-07 18:15:16.309 -05:00 [INF] Request finished in 159.8484ms 404 

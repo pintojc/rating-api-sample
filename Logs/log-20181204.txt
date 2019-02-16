@@ -1,0 +1,32 @@
+2018-12-04 10:25:51.289 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-04 10:25:52.008 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-04 10:25:52.018 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-04 10:25:52.053 -05:00 [INF] Request finished in 45.9932ms 301 
+2018-12-04 10:25:52.061 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-04 10:25:52.151 -05:00 [INF] Request finished in 90.6198ms 200 text/html
+2018-12-04 10:25:52.392 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-04 10:25:52.576 -05:00 [INF] Request finished in 183.9554ms 200 application/json;charset=utf-8
+2018-12-04 10:25:58.441 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables  
+2018-12-04 10:25:58.492 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-12-04 10:25:58.503 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Tables (ratingapi) - Validation state: "Valid"
+2018-12-04 10:25:58.988 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Tables (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 476.5049ms.
+2018-12-04 10:25:58.998 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RatingAPI.services.lookupService.Table, ratingapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-12-04 10:25:59.010 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 511.5502ms
+2018-12-04 10:25:59.014 -05:00 [INF] Request finished in 580.2074ms 200 application/json; charset=utf-8
+2018-12-04 10:26:11.259 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Table?tableName=OtherPerilsRelativities  
+2018-12-04 10:26:11.271 -05:00 [INF] Route matched with {action = "Table", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Table (ratingapi)
+2018-12-04 10:26:11.292 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Table (ratingapi) with arguments (["OtherPerilsRelativities"]) - Validation state: "Valid"
+2018-12-04 10:26:11.665 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Table (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 367.7481ms.
+2018-12-04 10:26:11.670 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.Table'.
+2018-12-04 10:26:11.676 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Table (ratingapi) in 401.2701ms
+2018-12-04 10:26:11.680 -05:00 [INF] Request finished in 420.5347ms 200 application/json; charset=utf-8
+2018-12-04 10:29:09.337 -05:00 [INF] Request starting HTTP/1.1 POST http://127.0.0.1:5100/rater/Lookup/LookupData application/json-patch+json 549
+2018-12-04 10:29:09.342 -05:00 [INF] Route matched with {action = "LookupData", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupData (ratingapi)
+2018-12-04 10:29:09.382 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupData (ratingapi) with arguments (["RatingAPI.services.lookupService.LookupRequest"]) - Validation state: "Valid"
+2018-12-04 10:29:09.386 -05:00 [INF] Target Feature Search Query: i_territory, f_factor
+2018-12-04 10:29:10.286 -05:00 [INF] Target Feature Filter Query: i_company_business_id = 1074 AND d_effective_date <= '12/4/2018' AND s_territory = '77081'
+2018-12-04 10:29:10.289 -05:00 [INF] Feature Lookup Query: SELECT TOP 1 i_territory, f_factor FROM OtherPerilsRelativities WHERE i_company_business_id = 1074 AND d_effective_date <= '12/4/2018' AND s_territory = '77081'
+2018-12-04 10:29:10.503 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.LookupData (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1117.4955ms.
+2018-12-04 10:29:10.507 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.LookupResponse'.
+2018-12-04 10:29:10.514 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.LookupData (ratingapi) in 1152.5803ms
+2018-12-04 10:29:10.517 -05:00 [INF] Request finished in 1181.3453ms 200 application/json; charset=utf-8

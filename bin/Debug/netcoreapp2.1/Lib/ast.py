@@ -207,10 +207,10 @@ def walk(node):
     only want to modify nodes in place and don't care about the context.
     """
     from collections import deque
-    todo = deque([node])
-    while todo:
-        node = todo.popleft()
-        todo.extend(iter_child_nodes(node))
+    ratingapi = deque([node])
+    while ratingapi:
+        node = ratingapi.popleft()
+        ratingapi.extend(iter_child_nodes(node))
         yield node
 
 

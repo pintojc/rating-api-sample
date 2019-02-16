@@ -3,7 +3,7 @@
 
 """Abstract Base Classes (ABCs) for numbers, according to PEP 3141.
 
-TODO: Fill out more detailed documentation on the operators."""
+ratingapi: Fill out more detailed documentation on the operators."""
 
 from __future__ import division
 from abc import ABCMeta, abstractmethod, abstractproperty

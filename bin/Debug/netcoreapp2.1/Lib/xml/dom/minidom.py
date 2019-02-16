@@ -6,7 +6,7 @@ parse("foo.xml")
 
 parseString("<foo><bar/></foo>")
 
-Todo:
+ratingapi:
 =====
  * convenience methods for getting elements and text.
  * more testing

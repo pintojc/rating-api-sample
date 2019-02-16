@@ -21,7 +21,7 @@ option involved with the exception.
 #
 # Peter Astrand <astrand@lysator.liu.se> added gnu_getopt().
 #
-# TODO for gnu_getopt():
+# ratingapi for gnu_getopt():
 #
 # - GNU getopt_long_only mechanism
 # - allow the caller to specify ordering

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using rules;
 
-namespace TodoApi.Controllers
+namespace RatingAPI.Controllers
 {
     [Route("rater/[controller]/[action]")]
     [ApiController]
@@ -13,7 +13,7 @@ namespace TodoApi.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Rules()
+        public ActionResult<IEnumerable<string>> R()
         {
            return new string[] { "value1", "value2" };
         }

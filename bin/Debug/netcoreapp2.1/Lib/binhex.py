@@ -121,9 +121,9 @@ class _Hqxcoderengine:
     def write(self, data):
         self.data = self.data + data
         datalen = len(self.data)
-        todo = (datalen//3)*3
-        data = self.data[:todo]
-        self.data = self.data[todo:]
+        ratingapi = (datalen//3)*3
+        data = self.data[:ratingapi]
+        self.data = self.data[ratingapi:]
         if not data:
             return
         self.hqxdata = self.hqxdata + binascii.b2a_hqx(data)

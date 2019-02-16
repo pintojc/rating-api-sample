@@ -51,7 +51,7 @@ class FixTupleParams(fixer_base.BaseFix):
         suite = results["suite"]
         args = results["args"]
         # This crap is so "def foo(...): x = 5; y = 7" is handled correctly.
-        # TODO(cwinter): suite-cleanup
+        # ratingapi(cwinter): suite-cleanup
         if suite[0].children[1].type == token.INDENT:
             start = 2
             indent = suite[0].children[1].value
@@ -88,11 +88,11 @@ class FixTupleParams(fixer_base.BaseFix):
             return
 
         # This isn't strictly necessary, but it plays nicely with other fixers.
-        # TODO(cwinter) get rid of this when children becomes a smart list
+        # ratingapi(cwinter) get rid of this when children becomes a smart list
         for line in new_lines:
             line.parent = suite[0]
 
-        # TODO(cwinter) suite-cleanup
+        # ratingapi(cwinter) suite-cleanup
         after = start
         if start == 0:
             new_lines[0].prefix = u" "

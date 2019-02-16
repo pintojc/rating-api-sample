@@ -34,7 +34,7 @@ internationalized, to the local language and cultural habits.
 #
 # J. David Ibanez implemented plural forms. Bruno Haible fixed some bugs.
 #
-# TODO:
+# ratingapi:
 # - Lazy loading of .mo files.  Currently the entire catalog is loaded into
 #   memory, but that's probably bad for large translated programs.  Instead,
 #   the lexical sort of original strings in GNU .mo files should be exploited

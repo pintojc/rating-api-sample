@@ -1605,7 +1605,7 @@ class OutputChecker:
         # If expected output uses ellipsis, a meaningful fancy diff is
         # too hard ... or maybe not.  In two real-life failures Tim saw,
         # a diff was a major help anyway, so this is commented out.
-        # [todo] _ellipsis_match() knows which pieces do and don't match,
+        # [ratingapi] _ellipsis_match() knows which pieces do and don't match,
         # and could be the basis for a kick-ass diff in this case.
         ##if optionflags & ELLIPSIS and ELLIPSIS_MARKER in want:
         ##    return False

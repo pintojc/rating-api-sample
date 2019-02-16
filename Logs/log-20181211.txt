@@ -1,0 +1,32 @@
+2018-12-11 16:32:50.287 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-11 16:32:52.548 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-11 16:32:52.654 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-11 16:32:52.809 -05:00 [INF] Request finished in 272.7538ms 301 
+2018-12-11 16:32:52.859 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-11 16:32:53.372 -05:00 [INF] Request finished in 523.167ms 200 text/html
+2018-12-11 16:32:53.455 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-bundle.js  
+2018-12-11 16:32:53.470 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-standalone-preset.js  
+2018-12-11 16:32:53.487 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui.css  
+2018-12-11 16:32:53.720 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2018-12-11 16:32:53.725 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2018-12-11 16:32:53.756 -05:00 [INF] Request finished in 288.8842ms 200 application/javascript
+2018-12-11 16:32:53.768 -05:00 [INF] Request finished in 330.5317ms 200 text/css
+2018-12-11 16:32:53.802 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2018-12-11 16:32:53.815 -05:00 [INF] Request finished in 389.6055ms 200 application/javascript
+2018-12-11 16:32:55.380 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-11 16:32:56.789 -05:00 [INF] Request finished in 1747.5355ms 200 application/json;charset=utf-8
+2018-12-11 17:34:37.049 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-11 17:34:38.229 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-11 17:34:38.285 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-11 17:34:38.415 -05:00 [INF] Request finished in 241.1324ms 301 
+2018-12-11 17:34:38.447 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-11 17:34:39.053 -05:00 [INF] Request finished in 611.1511ms 200 text/html
+2018-12-11 17:34:39.814 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-11 17:34:40.383 -05:00 [INF] Request finished in 574.8862ms 200 application/json;charset=utf-8
+2018-12-11 17:35:30.187 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Rating/Rates  
+2018-12-11 17:35:30.381 -05:00 [INF] Route matched with {action = "Rates", controller = "Rating"}. Executing action RatingAPI.Controllers.RatingController.Rates (ratingapi)
+2018-12-11 17:35:30.417 -05:00 [INF] Executing action method RatingAPI.Controllers.RatingController.Rates (ratingapi) - Validation state: "Valid"
+2018-12-11 17:36:06.389 -05:00 [INF] Executed action method RatingAPI.Controllers.RatingController.Rates (ratingapi), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 35942.4078ms.
+2018-12-11 17:36:06.406 -05:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-12-11 17:36:06.431 -05:00 [INF] Executed action RatingAPI.Controllers.RatingController.Rates (ratingapi) in 36037.1327ms
+2018-12-11 17:36:06.439 -05:00 [INF] Request finished in 36260.1741ms 404 application/json; charset=utf-8

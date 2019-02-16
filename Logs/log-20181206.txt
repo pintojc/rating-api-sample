@@ -1,0 +1,178 @@
+2018-12-06 15:29:11.663 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 15:29:12.470 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 15:29:12.482 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 15:29:12.526 -05:00 [INF] Request finished in 58.567ms 301 
+2018-12-06 15:29:12.534 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 15:29:12.626 -05:00 [INF] Request finished in 92.7733ms 200 text/html
+2018-12-06 15:29:12.638 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui.css  
+2018-12-06 15:29:12.642 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-standalone-preset.js  
+2018-12-06 15:29:12.644 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-bundle.js  
+2018-12-06 15:29:12.714 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2018-12-06 15:29:12.714 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2018-12-06 15:29:12.722 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2018-12-06 15:29:12.728 -05:00 [INF] Request finished in 90.3447ms 200 text/css
+2018-12-06 15:29:12.729 -05:00 [INF] Request finished in 82.8627ms 200 application/javascript
+2018-12-06 15:29:12.734 -05:00 [INF] Request finished in 86.2655ms 200 application/javascript
+2018-12-06 15:29:13.275 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/favicon-32x32.png  
+2018-12-06 15:29:13.295 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2018-12-06 15:29:13.300 -05:00 [INF] Request finished in 24.8134ms 200 image/png
+2018-12-06 15:29:13.333 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 15:29:13.516 -05:00 [INF] Request finished in 183.103ms 200 application/json;charset=utf-8
+2018-12-06 15:29:32.089 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables  
+2018-12-06 15:29:32.133 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-12-06 15:29:32.144 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Tables (ratingapi) - Validation state: "Valid"
+2018-12-06 15:29:32.853 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Tables (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 698.93400000000008ms.
+2018-12-06 15:29:32.863 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RatingAPI.services.lookupService.Table, ratingapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-12-06 15:29:32.873 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 733.4806ms
+2018-12-06 15:29:32.877 -05:00 [INF] Request finished in 789.3553ms 200 application/json; charset=utf-8
+2018-12-06 15:29:36.374 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 15:29:36.378 -05:00 [INF] Request finished in 4.2579ms 200 text/html
+2018-12-06 15:29:36.387 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui.css  
+2018-12-06 15:29:36.389 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-bundle.js  
+2018-12-06 15:29:36.394 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger-ui-standalone-preset.js  
+2018-12-06 15:29:36.408 -05:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2018-12-06 15:29:36.410 -05:00 [INF] The file /swagger-ui-bundle.js was not modified
+2018-12-06 15:29:36.413 -05:00 [INF] The file /swagger-ui.css was not modified
+2018-12-06 15:29:36.420 -05:00 [INF] Request finished in 36.3752ms 304 text/css
+2018-12-06 15:29:36.422 -05:00 [INF] Request finished in 30.6361ms 304 application/javascript
+2018-12-06 15:29:36.427 -05:00 [INF] Request finished in 30.6362ms 304 application/javascript
+2018-12-06 15:29:36.617 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 15:29:36.624 -05:00 [INF] Request finished in 6.2332ms 200 application/json;charset=utf-8
+2018-12-06 15:29:40.605 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Tables  
+2018-12-06 15:29:40.610 -05:00 [INF] Route matched with {action = "Tables", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Tables (ratingapi)
+2018-12-06 15:29:40.615 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Tables (ratingapi) - Validation state: "Valid"
+2018-12-06 15:29:41.008 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Tables (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 387.87760000000003ms.
+2018-12-06 15:29:41.011 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RatingAPI.services.lookupService.Table, ratingapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-12-06 15:29:41.015 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Tables (ratingapi) in 401.0128ms
+2018-12-06 15:29:41.020 -05:00 [INF] Request finished in 415.3875ms 200 application/json; charset=utf-8
+2018-12-06 15:30:00.856 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Table?tableName=RoofMaterial  
+2018-12-06 15:30:00.868 -05:00 [INF] Route matched with {action = "Table", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Table (ratingapi)
+2018-12-06 15:30:00.890 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Table (ratingapi) with arguments (["RoofMaterial"]) - Validation state: "Valid"
+2018-12-06 15:30:01.460 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Table (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 564.5384ms.
+2018-12-06 15:30:01.464 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.Table'.
+2018-12-06 15:30:01.470 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Table (ratingapi) in 598.2984ms
+2018-12-06 15:30:01.473 -05:00 [INF] Request finished in 617.5633ms 200 application/json; charset=utf-8
+2018-12-06 15:56:17.886 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 15:56:18.455 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 15:56:18.463 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 15:56:18.498 -05:00 [INF] Request finished in 45.9688ms 301 
+2018-12-06 15:56:18.506 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 15:56:18.591 -05:00 [INF] Request finished in 84.3983ms 200 text/html
+2018-12-06 15:56:18.839 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 15:56:19.006 -05:00 [INF] Request finished in 167.5791ms 200 application/json;charset=utf-8
+2018-12-06 15:56:53.800 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F06%2F2018&lookupName=s_roof_code  
+2018-12-06 15:56:53.859 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 15:56:53.883 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/06/2018","s_roof_code"]) - Validation state: "Valid"
+2018-12-06 15:57:30.061 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 15:57:30.578 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 15:57:30.586 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 15:57:30.621 -05:00 [INF] Request finished in 47.4802ms 301 
+2018-12-06 15:57:30.630 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 15:57:30.711 -05:00 [INF] Request finished in 81.0896ms 200 text/html
+2018-12-06 15:57:30.965 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 15:57:31.141 -05:00 [INF] Request finished in 179.9454ms 200 application/json;charset=utf-8
+2018-12-06 15:57:58.103 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F5%2F2018&lookupName=s_roof_code  
+2018-12-06 15:57:58.168 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 15:57:58.196 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/5/2018","s_roof_code"]) - Validation state: "Valid"
+2018-12-06 15:58:50.337 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 15:58:50.860 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 15:58:50.871 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 15:58:50.905 -05:00 [INF] Request finished in 46.5311ms 301 
+2018-12-06 15:58:50.915 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 15:58:50.993 -05:00 [INF] Request finished in 77.8194ms 200 text/html
+2018-12-06 15:58:51.234 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 15:58:51.407 -05:00 [INF] Request finished in 171.7413ms 200 application/json;charset=utf-8
+2018-12-06 15:58:59.948 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F5%2F2018&lookupName=s_roof_code  
+2018-12-06 15:59:00.022 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 15:59:00.055 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/5/2018","s_roof_code"]) - Validation state: "Valid"
+2018-12-06 16:01:34.235 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 16:01:34.736 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 16:01:34.744 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 16:01:34.779 -05:00 [INF] Request finished in 43.4813ms 301 
+2018-12-06 16:01:34.791 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 16:01:34.869 -05:00 [INF] Request finished in 79.8996ms 200 text/html
+2018-12-06 16:01:35.110 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 16:01:35.277 -05:00 [INF] Request finished in 167.703ms 200 application/json;charset=utf-8
+2018-12-06 16:01:56.811 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/Table?tableName=RoofMaterial  
+2018-12-06 16:01:56.867 -05:00 [INF] Route matched with {action = "Table", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.Table (ratingapi)
+2018-12-06 16:01:56.890 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.Table (ratingapi) with arguments (["RoofMaterial"]) - Validation state: "Valid"
+2018-12-06 16:01:57.402 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.Table (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 501.80800000000005ms.
+2018-12-06 16:01:57.412 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.Table'.
+2018-12-06 16:01:57.425 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.Table (ratingapi) in 550.8279ms
+2018-12-06 16:01:57.431 -05:00 [INF] Request finished in 619.4806ms 200 application/json; charset=utf-8
+2018-12-06 16:12:05.110 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 16:12:05.687 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 16:12:05.698 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 16:12:05.738 -05:00 [INF] Request finished in 52.7365ms 301 
+2018-12-06 16:12:05.751 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 16:12:05.839 -05:00 [INF] Request finished in 90.811ms 200 text/html
+2018-12-06 16:12:06.119 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 16:12:06.316 -05:00 [INF] Request finished in 198.7008ms 200 application/json;charset=utf-8
+2018-12-06 17:07:51.324 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F5%2F2018&lookupName=s_roof_code  
+2018-12-06 17:07:51.392 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 17:07:51.417 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/5/2018","s_roof_code"]) - Validation state: "Valid"
+2018-12-06 17:08:28.455 -05:00 [ERR] LookupValues Error: Operand type clash: date is incompatible with int
+2018-12-06 17:08:28.477 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 37050.263900000005ms.
+2018-12-06 17:08:28.487 -05:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-12-06 17:08:28.494 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.LookupValues (ratingapi) in 37095.778300000005ms
+2018-12-06 17:08:28.498 -05:00 [INF] Request finished in 37175.2792ms 404 
+2018-12-06 17:08:30.740 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F5%2F2018&lookupName=s_roof_code  
+2018-12-06 17:08:30.812 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 17:08:30.823 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/5/2018","s_roof_code"]) - Validation state: "Valid"
+2018-12-06 17:09:06.833 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 17:09:07.417 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 17:09:07.426 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 17:09:07.469 -05:00 [INF] Request finished in 55.3607ms 301 
+2018-12-06 17:09:07.475 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 17:09:07.559 -05:00 [INF] Request finished in 84.0953ms 200 text/html
+2018-12-06 17:09:07.811 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 17:09:07.994 -05:00 [INF] Request finished in 183.2627ms 200 application/json;charset=utf-8
+2018-12-06 17:09:16.650 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F5%2F2018&lookupName=s_roof_code  
+2018-12-06 17:09:16.715 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 17:09:16.741 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/5/2018","s_roof_code"]) - Validation state: "Valid"
+2018-12-06 17:10:39.085 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 17:10:39.676 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 17:10:39.685 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 17:10:39.728 -05:00 [INF] Request finished in 54.7742ms 301 
+2018-12-06 17:10:39.739 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 17:10:39.826 -05:00 [INF] Request finished in 87.9497ms 200 text/html
+2018-12-06 17:10:40.063 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 17:10:40.281 -05:00 [INF] Request finished in 217.7471ms 200 application/json;charset=utf-8
+2018-12-06 17:10:42.304 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F5%2F2018&lookupName=s_roof_code  
+2018-12-06 17:10:42.362 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 17:10:42.386 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/5/2018","s_roof_code"]) - Validation state: "Valid"
+2018-12-06 17:10:55.691 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 13289.0948ms.
+2018-12-06 17:10:55.701 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.LookupResponse'.
+2018-12-06 17:10:55.715 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.LookupValues (ratingapi) in 13347.1223ms
+2018-12-06 17:10:55.722 -05:00 [INF] Request finished in 13416.5099ms 200 application/json; charset=utf-8
+2018-12-06 17:19:28.109 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 17:19:28.824 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 17:19:28.836 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 17:19:28.874 -05:00 [INF] Request finished in 51.8357ms 301 
+2018-12-06 17:19:28.886 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 17:19:28.971 -05:00 [INF] Request finished in 84.7856ms 200 text/html
+2018-12-06 17:19:29.231 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 17:19:29.418 -05:00 [INF] Request finished in 186.8103ms 200 application/json;charset=utf-8
+2018-12-06 17:19:51.567 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F5%2F2018&lookupName=s_roof_code%7Cs_roof_material  
+2018-12-06 17:19:51.636 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 17:19:51.662 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/5/2018","s_roof_code|s_roof_material"]) - Validation state: "Valid"
+2018-12-06 17:20:20.547 -05:00 [ERR] LookupValues Error: Incorrect syntax near the keyword 'FROM'.
+2018-12-06 17:20:20.552 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 28881.659900000002ms.
+2018-12-06 17:20:20.562 -05:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-12-06 17:20:20.569 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.LookupValues (ratingapi) in 28926.531300000002ms
+2018-12-06 17:20:20.574 -05:00 [INF] Request finished in 29008.5082ms 404 
+2018-12-06 17:21:27.414 -05:00 [WRN] Overriding address(es) 'http://localhost:5100'. Binding to endpoints defined in UseKestrel() instead.
+2018-12-06 17:21:27.966 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/  
+2018-12-06 17:21:27.974 -05:00 [WRN] Failed to determine the https port for redirect.
+2018-12-06 17:21:28.038 -05:00 [INF] Request finished in 73.3878ms 301 
+2018-12-06 17:21:28.053 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/index.html  
+2018-12-06 17:21:28.148 -05:00 [INF] Request finished in 95.4577ms 200 text/html
+2018-12-06 17:21:28.393 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/swagger/v1/swagger.json  
+2018-12-06 17:21:28.570 -05:00 [INF] Request finished in 177.3591ms 200 application/json;charset=utf-8
+2018-12-06 17:21:46.320 -05:00 [INF] Request starting HTTP/1.1 GET http://127.0.0.1:5100/rater/Lookup/LookupValues?tableName=RoofMaterial&carrierRef=1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05&effectiveDate=12%2F5%2F2018&lookupName=s_roof_code%7Cs_roof_material  
+2018-12-06 17:21:46.390 -05:00 [INF] Route matched with {action = "LookupValues", controller = "Lookup"}. Executing action RatingAPI.Controllers.LookupController.LookupValues (ratingapi)
+2018-12-06 17:21:46.415 -05:00 [INF] Executing action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi) with arguments (["RoofMaterial","1738B0E0-E6FF-4AF1-BEA7-E63C9CF62C05","12/5/2018","s_roof_code|s_roof_material"]) - Validation state: "Valid"
+2018-12-06 17:22:06.823 -05:00 [INF] Executed action method RatingAPI.Controllers.LookupController.LookupValues (ratingapi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 20396.7481ms.
+2018-12-06 17:22:06.834 -05:00 [INF] Executing ObjectResult, writing value of type 'RatingAPI.services.lookupService.LookupResponse'.
+2018-12-06 17:22:06.847 -05:00 [INF] Executed action RatingAPI.Controllers.LookupController.LookupValues (ratingapi) in 20450.3322ms
+2018-12-06 17:22:06.852 -05:00 [INF] Request finished in 20532.1501ms 200 application/json; charset=utf-8

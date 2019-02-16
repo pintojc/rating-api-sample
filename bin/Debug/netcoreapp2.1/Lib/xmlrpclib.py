@@ -89,7 +89,7 @@
 #
 # things to look into some day:
 
-# TODO: sort out True/False/boolean issues for Python 2.3
+# ratingapi: sort out True/False/boolean issues for Python 2.3
 
 """
 An XML-RPC client interface for Python.
